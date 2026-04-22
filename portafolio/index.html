@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar" aria-label="Redes sociales">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/573023553287" target="_blank" rel="noopener" data-tip="WhatsApp" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/juan_va523" target="_blank" rel="noopener" data-tip="Instagram" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+    </a>
+
+    <!-- Gmail -->
+    <a href="mailto:valenciacamilo5926@gmail.com" data-tip="Gmail" aria-label="Gmail">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+      </svg>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/j-cvalencia" target="_blank" rel="noopener" data-tip="GitHub" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+      </svg>
+    </a>
+
+  </aside>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav>
+    <div class="nav-logo">C<span>.</span>Valencia</div>
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#certificados">Certificados</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#sobre-mi"    onclick="closeMobile()">Sobre mí</a>
+    <a href="#proyectos"   onclick="closeMobile()">Proyectos</a>
+    <a href="#certificados" onclick="closeMobile()">Certificados</a>
+    <a href="#contacto"    onclick="closeMobile()">Contacto</a>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="inicio">
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-badge">✦ Disponible para trabajar</div>
+        <h1>
+          Hola, soy<br>
+          <span class="line-accent">Camilo Valencia</span><br>
+          <span class="line-dim">Desarrollador Web</span>
+        </h1>
+        <p class="hero-desc">
+          Apasionado por crear interfaces web limpias, funcionales y bien diseñadas.
+          Busco mi primera oportunidad para crecer, aprender y aportar valor a un equipo.
+        </p>
+        <div class="hero-cta">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos →</a>
+          <a href="#cv" class="btn btn-outline">Descargar CV</a>
+        </div>
+        <p class="scroll-hint">Desplázate para ver más</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ===================== SOBRE MÍ ===================== -->
+  <section id="sobre-mi">
+    <div class="container">
+      <p class="section-label reveal">Sobre mí</p>
+      <h2 class="section-title reveal">Quién soy y <span>qué me mueve</span></h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Soy un desarrollador web <strong>autodidacta y entusiasta</strong>, apasionado por transformar ideas en productos digitales reales. Llevo tiempo aprendiendo por mi cuenta y con cursos, construyendo proyectos que me retan a mejorar cada día.
+          </p>
+          <p>
+            Aunque no tengo experiencia laboral formal todavía, tengo <strong>ganas, disciplina y un portafolio</strong> que demuestra lo que puedo hacer. Busco esa primera oportunidad donde pueda aprender en un entorno real y aportar desde el primer día.
+          </p>
+          <p>
+            Me gusta el código limpio, los diseños cuidados y los proyectos que resuelven problemas reales.
+          </p>
+
+          <div class="skills-list">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Node.js (básico)</span>
+          </div>
+        </div>
+
+        <div class="about-cards reveal">
+          <div class="info-card">
+            <p class="ic-label">Ubicación</p>
+            <p class="ic-value">Colombia 🇨🇴</p>
+          </div>
+          <div class="info-card">
+            <p class="ic-label">Estado</p>
+            <p class="ic-value">Buscando primer empleo</p>
+          </div>
+          <div class="info-card">
+            <p class="ic-label">Disponibilidad</p>
+            <p class="ic-value">Tiempo completo / Part-time</p>
+          </div>
+          <div class="info-card">
+            <p class="ic-label">Idiomas</p>
+            <p class="ic-value">Español · Inglés (básico)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ===================== PROYECTOS ===================== -->
+  <section id="proyectos">
+    <div class="container">
+      <p class="section-label reveal">Proyectos</p>
+      <h2 class="section-title reveal">Lo que <span>he construido</span></h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-icon">💱</div>
+          <div class="project-name">Conversor de divisa</div>
+          <p class="project-desc">
+            Conversor de divisas en tiempo real con React, permite convertir entre múltiples monedas (USD, COP, EUR, MXN, entre otras). Interfaz intuitiva, diseño responsivo, y actualización automática de tasas de cambio mediante una API.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">CSS Modules</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/j-cvalencia/ConversorDeDivisa" target="_blank">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              Código
+            </a>
+            <a href="https://j-cvalencia.github.io/ConversorDeDivisa/" target="_blank">↗ Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon">📝</div>
+          <div class="project-name">App de Notas</div>
+          <p class="project-desc">
+            Aplicación de notas con React:, permite crear, editar, eliminar y visualizar notas con título y descripción. Diseño responsivo, con modal emergente, botón flotante para agregar notas y tarjetas organizadas. Ideal para gestionar recordatorios o tareas de forma sencilla.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">CSS Modules</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/j-cvalencia/AppDeNotas" target="_blank">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              Código
+            </a>
+            <a href="https://j-cvalencia.github.io/AppDeNotas/" target="_blank">↗ Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon">💳</div>
+          <div class="project-name">Digital wallet</div>
+          <p class="project-desc">
+            Billetera digital con gestión de cuentas, permite crear perfiles, iniciar sesión, depositar, retirar, transferir fondos y consultar saldo. Con opciones rápidas de montos y transferencias entre usuarios.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Javascript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/j-cvalencia/DigitalWallet" target="_blank">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              Código
+            </a>
+            <a href="https://j-cvalencia.github.io/DigitalWallet/" target="_blank">↗ Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon">📚</div>
+          <div class="project-name">Biblioteca digital</div>
+          <p class="project-desc">
+            Biblioteca digital interactiva: Permite explorar y filtrar libros por categoría (terror, aventura, romance, etc.). Cada libro muestra su portada, título, autor, año, descripción y un enlace para leerlo en PDF. Diseño adaptable para computadora y móvil.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Javascript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/j-cvalencia/Libros" target="_blank">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              Código
+            </a>
+            <a href="https://j-cvalencia.github.io/Libros/" target="_blank">↗ Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon">🎨</div>
+          <div class="project-name">Generador paleta de colores</div>
+          <p class="project-desc">
+            Generador de paletas de colores aleatorios: Muestra cinco colores con sus códigos en hexadecimal y RGB. Puedes copiar el código que prefieras con solo un clic y generar nuevos colores cuando quieras. Funciona en computadora y en celular.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Javascript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/j-cvalencia/GeneradorPaletaDeColores" target="_blank">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              Código
+            </a>
+            <a href="https://j-cvalencia.github.io/GeneradorPaletaDeColores/" target="_blank">↗ Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon">🕒</div>
+          <div class="project-name">Reloj digital</div>
+          <p class="project-desc">
+            Reloj digital elegante con hora exacta, fecha completa y modo oscuro. Muestra el día, mes, año y hora en un estilo retro, y se adapta a pantallas de computadora y móvil. Incluye un botón para cambiar entre modo claro y oscuro.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Javascript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/j-cvalencia/RelojDigital" target="_blank">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              Código
+            </a>
+            <a href="https://j-cvalencia.github.io/RelojDigital/" target="_blank">↗ Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon">🔐</div>
+          <div class="project-name">Formulario de inicio de sesión</div>
+          <p class="project-desc">
+            Formulario de inicio de sesión con diseño moderno: Tiene campos para usuario y contraseña, un fondo con degradado oscuro y azul, y se adapta a pantallas grandes, medianas y móviles.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/j-cvalencia/Login" target="_blank">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              Código
+            </a>
+            <a href="https://j-cvalencia.github.io/Login/" target="_blank">↗ Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon">🏋️</div>
+          <div class="project-name">GYM_Astreus</div>
+          <p class="project-desc">
+            Página web para gimnasio: Diseño moderno y atractivo con secciones de presentación, información sobre el gimnasio, servicios ofrecidos (entrenamientos personalizados, clases en grupo), testimonios de clientes, y contacto. Es completamente responsivo para adaptarse a móviles y computadoras
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/j-cvalencia/GYM_Astreus" target="_blank">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              Código
+            </a>
+            <a href="https://j-cvalencia.github.io/GYM_Astreus/" target="_blank">↗ Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ===================== CERTIFICADOS ===================== -->
+  <section id="certificados">
+    <div class="container">
+      <p class="section-label reveal">Certificados</p>
+      <h2 class="section-title reveal">Mi <span>formación</span></h2>
+
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">💻</div>
+          <div class="cert-name">Técnico en Programacion De Software</div>
+          <div class="cert-issuer">Sena</div>
+          <div class="cert-date">2023</div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">🔄</div>
+          <div class="cert-name">Git y Github: repositorio, commit y versiones</div>
+          <div class="cert-issuer">Alura LATAM</div>
+          <div class="cert-date">2025</div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">🧱</div>
+          <div class="cert-name">HTML y CSS: ambientes de desarrollo, estructura de archivos y tags</div>
+          <div class="cert-issuer">Alura LATAM</div>
+          <div class="cert-date">2025</div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">📐</div>
+          <div class="cert-name">HTML y CSS: clases, posicionamiento y flexbox</div>
+          <div class="cert-issuer">Oracle + Alura LATAM</div>
+          <div class="cert-date">2025</div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">🎛️</div>
+          <div class="cert-name">HTML y CSS: header, footer y variables CSS</div>
+          <div class="cert-issuer">Oracle + Alura LATAM</div>
+          <div class="cert-date">2025</div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">📱</div>
+          <div class="cert-name">HTML y CSS: trabajando con responsividad y publicación de proyectos</div>
+          <div class="cert-issuer">Oracle + Alura LATAM</div>
+          <div class="cert-date">2025</div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">🧠</div>
+          <div class="cert-name">Lógica de programación: explorar funciones y listas</div>
+          <div class="cert-issuer">Alura LATAM</div>
+          <div class="cert-date">2025</div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">⚡</div>
+          <div class="cert-name">Lógica de programación: sumérgete en la programación con javascript</div>
+          <div class="cert-issuer">Alura LATAM</div>
+          <div class="cert-date">2025</div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">🎯</div>
+          <div class="cert-name">Practicando lógica de programación: challenge amigo secreto</div>
+          <div class="cert-issuer">Alura LATAM</div>
+          <div class="cert-date">2025</div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">💻</div>
+          <div class="cert-name">Cursando tecnologia en Desarrollo De Software</div>
+          <div class="cert-issuer">I.U Pascual Bravo</div>
+          <div class="cert-date">2024-Actualmente</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ===================== CV ===================== -->
+  <section id="cv">
+    <div class="container cv-section">
+      <p class="section-label reveal">Currículum</p>
+      <h2 class="section-title reveal">Descarga mi <span>CV</span></h2>
+
+      <div class="cv-box reveal">
+        <div class="cv-icon">📄</div>
+        <h3>Hoja de vida</h3>
+        <p>Descarga mi CV actualizado con mis habilidades, formación y proyectos personales.</p>
+        <a href="cv.pdf" download class="btn btn-primary">
+          ↓ &nbsp;Descargar CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+  
+  <!-- ===================== CONTACTO ===================== -->
+  <section id="contacto">
+    <div class="container">
+      <p class="section-label reveal">Contacto</p>
+      <h2 class="section-title reveal">Hablemos <span>:)</span></h2>
+
+      <div class="contact-grid">
+        <div class="contact-intro reveal">
+          <p>
+            Escríbeme, respondo rápido.
+          </p>
+          <p>
+            Estoy abierto a prácticas, freelance y trabajo de tiempo completo o medio tiempo.
+          </p>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+              <span>valenciacamilo5926@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span>+57 302 355 3287</span>
+            </div>
+          </div>
+        </div>
+
+        <!--  ===================== FORMULARIO ===================== -->
+        <div class="contact-form reveal">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" placeholder="Tu nombre" />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" id="email" placeholder="tuemail@ejemplo.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" placeholder="Cuéntame"></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="handleForm()">Enviar mensaje →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p><span>&COPY;</span> Camilo Valencia · 2026</p>
+  </footer>
+
+  <script src="./main.js"></script>
+
+</body>
+</html>
